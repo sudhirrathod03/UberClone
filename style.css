@@ -1,0 +1,356 @@
+* {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.navbaar{
+    height: 3rem;
+    width: 100vw;
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+}
+
+.uber_options{
+    height: 1rem;
+    width: 400px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    margin-left: 50px;
+}
+
+.uber_options a{
+    font-size: 14px;
+    text-decoration: none;
+    color:white;
+    padding: 5px 12px;
+}
+.uber_options a:hover{
+    background-color: #303030;
+    border-radius: 20px;
+    transition: 0.2s;
+}
+
+.sign_up{
+    display: flex;
+    height: 1rem;
+    width: 300px;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-right: 50px;
+}
+
+.sign_up a{
+    font-size: 14px;
+    text-decoration: none;
+    color:white;
+    padding: 5px 12px;
+    
+  
+
+}
+.sign_up a:hover{
+    background-color: #303030;
+    border-radius: 20px;
+    transition: 0.2s;
+}
+.sign_up i{
+    padding-right: 10px;
+}
+
+.sign-in{
+    height: 2.1rem;
+    padding: 5px 15px;
+    background-color: white;
+    color:black;
+    border-radius: 19px;
+    font-weight: 600;
+    border:none;
+    cursor: pointer;
+
+}
+.login{
+    background: transparent;
+    border: none;
+    color: white;
+    padding: 5px 12px;
+}
+.login:hover{
+    background-color: #303030;
+    border-radius: 20px;
+    transition: 0.2s;
+    cursor: pointer;
+
+}
+
+
+@media screen and (max-width:1136px) {
+    .uber_options a ,.sign_up a{
+        display:none;
+    }
+}
+
+.root{
+    height: 80vh;
+    background-color: black;
+    padding: 64px 64px 64px 95px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+
+
+.content{
+    padding-top: 150px;
+    width: 527px;
+    height: 400px;
+
+
+}
+.content h1{
+    font-size: 53px;
+    font-weight: 600;
+    line-height: 60px;
+    margin-bottom: 30px;
+}
+.location{
+    height: 433px;
+    width: 185px;
+    margin: 20px 0px;
+}
+.location input{
+    padding: 10px 10px 10px 36px;
+    width: 348px;
+    margin: 10px 0px;
+    border-radius: 15px;
+}
+.location button{
+    padding: 14px 25px;
+    border-radius: 15px;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: white;
+    cursor: pointer;
+}
+
+.card1{
+    width: 500px;
+    height: 659px;
+    background-image: url("./assets/card1.webp");
+    background-size: cover;
+    margin-left: 180px;
+    align-self: flex-start;
+}
+
+.suggestion{
+    display: flex;
+    width: 1082px;
+    height: 182px;
+    padding: 94px;
+    justify-content: space-evenly;
+}
+.suggestions{
+    width: 319px;
+    height: 128px;
+    display: flex;
+    background-color: #f3f3f3;
+    padding: 10px;
+    border-radius: 10px;
+    margin-right: 30px;
+}
+
+.sugg1{
+
+    width: 191px;
+    height: 120px;
+}
+
+.sugg1 button{
+    border-radius: 20px;
+    color: black;
+    background-color: white;
+    border: none;
+    padding: 5px 10px;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+.sugg1 p{
+    font-size: 12px;
+}
+.car{
+    width: 128px;
+    height: 128px;
+    /* background-image: url("./assets/car.png"); */
+    background-size: contain;
+}
+.sugg-option{
+    padding-left: 100px;
+   margin-top: 50px;
+   font-weight: 500;
+}
+
+.log-activity{
+    height: 400px;
+    background-color: white;
+    display: flex;
+}
+
+.log-into-acc{
+    width: 30%;
+    background-color: white;
+    padding-left: 80px;
+}
+.log-into-btn{
+  margin-top: 15px;
+    width: 200px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.log-into-acc input{
+    margin-top: 20px;
+    width: 250px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    cursor: pointer;
+}
+.log-into-acc h1{
+    padding-bottom: 20px;
+    font-weight: 600;
+}
+.travelling-img img{
+    margin-left: 350px;
+    height: 300px;
+    width: 500px;
+}
+
+@media screen and (max-width: 1136px) {
+    .uber_options a, .sign_up a {
+        display: none;
+    }
+    .sign_up {
+        justify-content: flex-end;
+    }
+    .navbaar {
+        padding: 8px;
+    }
+    .login, .sign-in {
+        font-size: 12px;
+        padding: 4px 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navbaar {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+    .uber_options {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 0;
+    }
+    .uber_options h2 {
+        margin-bottom: 10px;
+    }
+    .root {
+        flex-direction: column;
+        padding: 20px;
+        height: auto;
+    }
+    .content {
+        padding-top: 20px;
+        width: 100%;
+        height: auto;
+    }
+    .content h1 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+    .location input {
+        width: 100%;
+    }
+    .location button {
+        width: 100%;
+    }
+    .card1 {
+        margin-left: 0;
+        width: 100%;
+        height: 300px;
+        background-size: cover;
+    }
+    .suggestion {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+    .suggestions {
+        width: 90%;
+        margin: 10px 0;
+    }
+    .log-activity {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    .log-into-acc {
+        width: 100%;
+        text-align: center;
+        padding: 20px 0;
+    }
+    .log-into-btn {
+        width: 80%;
+    }
+    .log-into-acc input {
+        width: 80%;
+    }
+    .travelling-img img {
+        margin: 0;
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .content h1 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+    .location input {
+        font-size: 14px;
+    }
+    .location button {
+        font-size: 14px;
+    }
+    .card1 {
+        height: 200px;
+    }
+    .sugg-option {
+        font-size: 16px;
+        text-align: center;
+    }
+    .suggestions {
+        padding: 8px;
+    }
+    .suggestions h4 {
+        font-size: 16px;
+    }
+    .suggestions p {
+        font-size: 10px;
+    }
+    .log-into-acc h1 {
+        font-size: 18px;
+    }
+}
